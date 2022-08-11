@@ -1,0 +1,18 @@
+CRITICAL - 2022-08-09 05:59:38 --> syntax error, unexpected variable "$person_data", expecting ")"
+in APPPATH/Views/pages/display_data.php on line 44.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 3 APPPATH/Controllers/CIcrud.php(23): view('pages/display_data', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->view_data()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-09 05:59:57 --> syntax error, unexpected variable "$person_data", expecting ")"
+in APPPATH/Views/pages/display_data.php on line 44.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 3 APPPATH/Controllers/CIcrud.php(23): view('pages/display_data', [...])
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->view_data()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

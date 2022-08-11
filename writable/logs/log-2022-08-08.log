@@ -1,0 +1,86 @@
+CRITICAL - 2022-08-08 10:57:48 --> Undefined array key "serial_no"
+in APPPATH/Controllers/CIcrud.php on line 88.
+ 1 APPPATH/Controllers/CIcrud.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "serial_no"', 'APPPATH/Controllers/CIcrud.php', 88)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 11:39:36 --> Too few arguments to function App\Controllers\CIcrud::update_person(), 0 passed in /opt/lampp/htdocs/ci4-crud/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/CIcrud.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 11:42:35 --> Too few arguments to function App\Controllers\CIcrud::update_person(), 0 passed in /opt/lampp/htdocs/ci4-crud/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/CIcrud.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 11:44:28 --> Too few arguments to function App\Controllers\CIcrud::update_person(), 0 passed in /opt/lampp/htdocs/ci4-crud/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/CIcrud.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 11:45:26 --> Too few arguments to function App\Controllers\CIcrud::update_person(), 0 passed in /opt/lampp/htdocs/ci4-crud/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/CIcrud.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 11:46:20 --> Too few arguments to function App\Controllers\CIcrud::update_person(), 0 passed in /opt/lampp/htdocs/ci4-crud/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/CIcrud.php on line 89.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 12:21:51 --> CodeIgniter\Database\BaseBuilder::orderBy(): Argument #2 ($direction) must be of type string, null given, called in /opt/lampp/htdocs/ci4-crud/system/Model.php on line 771
+in SYSTEMPATH/Database/BaseBuilder.php on line 1408.
+ 1 SYSTEMPATH/Model.php(771): CodeIgniter\Database\BaseBuilder->orderBy('serial_no', null)
+ 2 APPPATH/Controllers/CIcrud.php(79): CodeIgniter\Model->__call('orderBy', [...])
+ 3 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 4 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 5 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 12:22:02 --> Undefined array key "serial_no"
+in APPPATH/Controllers/CIcrud.php on line 82.
+ 1 APPPATH/Controllers/CIcrud.php(82): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "serial_no"', 'APPPATH/Controllers/CIcrud.php', 82)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 12:24:38 --> Undefined variable $person
+in APPPATH/Views/pages/display_data.php on line 35.
+ 1 APPPATH/Views/pages/display_data.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $person', 'APPPATH/Views/pages/display_data.php', 35)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/display_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 5 APPPATH/Controllers/CIcrud.php(94): view('pages/display_data', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 12:26:02 --> Undefined variable $person
+in APPPATH/Views/pages/display_data.php on line 35.
+ 1 APPPATH/Views/pages/display_data.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $person', 'APPPATH/Views/pages/display_data.php', 35)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/display_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 5 APPPATH/Controllers/CIcrud.php(94): view('pages/display_data', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 12:44:50 --> Too few arguments to function App\Controllers\CIcrud::update_person(), 0 passed in /opt/lampp/htdocs/ci4-crud/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/CIcrud.php on line 75.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-08 13:08:49 --> Too few arguments to function App\Controllers\CIcrud::update_person(), 0 passed in /opt/lampp/htdocs/ci4-crud/system/CodeIgniter.php on line 896 and exactly 1 expected
+in APPPATH/Controllers/CIcrud.php on line 75.
+ 1 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person()
+ 2 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 3 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

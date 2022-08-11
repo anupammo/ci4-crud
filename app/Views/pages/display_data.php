@@ -17,41 +17,43 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="card text-primary border-0 my-2">
+                <div class="card shadow border-0 rounded-0 my-2 pt-5">
                     <div class="card-body">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Mobile</th>
-                                    <th scope="col">Gender</th>
-                                    <th scope="col">Age</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <?php foreach ($person as $person_data) : ?>
+                        <div class="table-responsive-md">
+                            <table class="table">
+                                <thead>
                                     <tr>
-                                        <th scope="row"><?= esc($person_data['serial_no']) ?></th>
-                                        <td><?= esc($person_data['p_name']) ?></td>
-                                        <td><?= esc($person_data['email_id']) ?></td>
-                                        <td><?= esc($person_data['cell_no']) ?></td>
-                                        <td><?= esc($person_data['p_sex']) ?></td>
-                                        <td><?= esc($person_data['p_age']) ?></td>
-                                        <td class="fs-5">
-                                            <a href="edit_data/<?= esc($person_data['serial_no']) ?>" class="text-primary btn shadow-none border-0 rounded-0 mx-2 p-0">
-                                                <i class="bi bi-pencil-fill"></i>
-                                            </a>
-                                            <a href="edit_data/<?= esc($person_data['serial_no']) ?>" class="text-danger btn shadow-none border-0 rounded-0 mx-2 p-0">
-                                                <i class="bi bi-trash-fill"></i>
-                                            </a>
-                                        </td>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Mobile</th>
+                                        <th scope="col">Gender</th>
+                                        <th scope="col">Age</th>
+                                        <th scope="col"></th>
                                     </tr>
-                                <?php endforeach ?>
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($person as $person_data) : ?>
+                                        <tr>
+                                            <th scope="row"><?= esc($person_data['serial_no']) ?></th>
+                                            <td><?= esc($person_data['p_name']) ?></td>
+                                            <td><?= esc($person_data['email_id']) ?></td>
+                                            <td><?= esc($person_data['cell_no']) ?></td>
+                                            <td><?= esc($person_data['p_sex']) ?></td>
+                                            <td><?= esc($person_data['p_age']) ?></td>
+                                            <td class="fs-5 py-1">
+                                                <a href="<?= base_url('/edit_data/' . esc($person_data['serial_no'])) ?>" class="btn btn-primary rounded-circle shadow-none px-2 py-1">
+                                                    <i class="bi bi-pencil-fill"></i>
+                                                </a>
+                                                <a href="<?= base_url('/remove_data/' . esc($person_data['serial_no'])) ?>" class="btn btn-danger rounded-circle shadow-none px-2 py-1">
+                                                    <i class="bi bi-trash-fill"></i>
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    <?php endforeach ?>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>

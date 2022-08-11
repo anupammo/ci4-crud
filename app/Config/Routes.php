@@ -38,11 +38,12 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'CIcrud::index');
-// $routes->get('/add_data', 'CIcrud::add_data');
+$routes->get('/view_data', 'CIcrud::view_data');
 $routes->match(['get', 'post'], '/add_data', 'CIcrud::add_data');
 $routes->get('/edit_data/(:num)', 'CIcrud::edit_data/$1');
-$routes->get('/view_data', 'CIcrud::view_data');
-$routes->match(['get', 'post'], '/update_person', 'CIcrud::update_person');
+$routes->match(['get', 'post'], '/update_person/(:num)', 'CIcrud::update_person/$1');
+$routes->get('/remove_data/(:num)', 'CIcrud::remove_data/$1');
+$routes->get('/delete_data/(:num)', 'CIcrud::delete_data/$1');
 
 /*
  * --------------------------------------------------------------------
