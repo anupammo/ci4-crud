@@ -16,6 +16,8 @@ class CIcrud extends BaseController
     {
         $model = model(CrudModel::class);
 
+        $session = \Config\Services::session();
+
         $data['person'] = $model->orderBy('serial_no')->findAll();
 
         return view('templates/header')
@@ -28,14 +30,25 @@ class CIcrud extends BaseController
     {
         $model = model(CrudModel::class);
 
+        $data['person'] = $model->orderBy('serial_no')->findAll();
+
+        return view('templates/header')
+            . view('templates/topnav')
+            . view('pages/add_data')
+            . view('templates/footer');
+    }
+
+    public function save_data()
+    {
+        $model = model(CrudModel::class);
+
         if ($this->request->getMethod() === 'post' && $this->validate([
             'p_name'    => 'required',
             'p_age'     => 'required',
             'p_sex'     => 'required',
             'cell_no'   => 'required',
             'email_id'  => 'required',
-        ])) 
-        {
+        ])) {
             $model->save([
                 'p_name'    => $this->request->getPost('p_name'),
                 'p_age'     => $this->request->getPost('p_age'),
@@ -44,20 +57,16 @@ class CIcrud extends BaseController
                 'email_id'  => $this->request->getPost('email_id'),
             ]);
 
-            $data = [
-                'succes_msg' => 'Wow - Record added successfully',
-            ];
+            $data['person'] = $model->orderBy('serial_no')->findAll();
 
-            return view('templates/header')
-                . view('templates/topnav')
-                . view('pages/add_data', $data)
-                . view('templates/footer');
+            // $session = \Config\Services::session();
+
+            $session = session();
+
+            $session->set('session_msg', 'Record added successfully');
+
+            return $this->response->redirect(base_url('/view_data'));
         }
-
-        return view('templates/header')
-            . view('templates/topnav')
-            . view('pages/add_data')
-            . view('templates/footer');
     }
 
     public function edit_data($serial_no = null)
@@ -75,7 +84,7 @@ class CIcrud extends BaseController
     public function update_person($serial_no = null)
     {
         $model = model(CrudModel::class);
-        
+
         $data = [
             'serial_no' => $serial_no,
             'p_name'    => $this->request->getPost('p_name'),
@@ -87,12 +96,15 @@ class CIcrud extends BaseController
 
         $model->update($serial_no, $data);
 
+        // $session = \Config\Services::session();
+
+        $session = session();
+
+        $session->set('session_msg', 'Record updated successfully');
+
         $data['person'] = $model->orderBy('serial_no')->findAll();
 
-        return view('templates/header')
-            . view('templates/topnav')
-            . view('pages/display_data', $data)
-            . view('templates/footer');
+        return $this->response->redirect(base_url('/view_data'));
     }
 
     public function remove_data($serial_no = null)
@@ -115,9 +127,12 @@ class CIcrud extends BaseController
 
         $data['person'] = $model->orderBy('serial_no')->findAll();
 
-        return view('templates/header')
-            . view('templates/topnav')
-            . view('pages/display_data', $data)
-            . view('templates/footer');
+        // $session = \Config\Services::session();
+
+        $session = session();
+
+        $session->set('session_msg', 'Record deleted successfully');
+
+        return $this->response->redirect(base_url('/view_data'));
     }
 }

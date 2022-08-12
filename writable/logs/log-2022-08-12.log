@@ -1,0 +1,152 @@
+CRITICAL - 2022-08-12 14:14:23 --> view(): Argument #2 ($data) must be of type array, string given, called in /opt/lampp/htdocs/ci4-crud/app/Controllers/CIcrud.php on line 56
+in SYSTEMPATH/Common.php on line 1121.
+ 1 APPPATH/Controllers/CIcrud.php(56): view('pages/view_data', 'Wow - Record added successfully')
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 14:29:55 --> Invalid file: pages/view_data.php
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 33.
+ 1 SYSTEMPATH/View/View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('pages/view_data.php')
+ 2 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/view_data', [], true)
+ 3 APPPATH/Controllers/CIcrud.php(58): view('pages/view_data')
+ 4 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->add_data()
+ 5 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 14:31:53 --> Undefined variable $person
+in APPPATH/Views/pages/display_data.php on line 42.
+ 1 APPPATH/Views/pages/display_data.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $person', 'APPPATH/Views/pages/display_data.php', 42)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/display_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 5 APPPATH/Controllers/CIcrud.php(61): view('pages/display_data')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->add_data()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 14:32:29 --> Undefined variable $person
+in APPPATH/Views/pages/display_data.php on line 42.
+ 1 APPPATH/Views/pages/display_data.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $person', 'APPPATH/Views/pages/display_data.php', 42)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/display_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 5 APPPATH/Controllers/CIcrud.php(61): view('pages/display_data')
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->add_data()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 15:50:18 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/CIcrud.php on line 135.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/CIcrud.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CIcrud')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CIcrud')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\CIcrud', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 15:50:22 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/CIcrud.php on line 135.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/CIcrud.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CIcrud')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CIcrud')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\CIcrud', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 15:50:23 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/CIcrud.php on line 135.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/CIcrud.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CIcrud')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CIcrud')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\CIcrud', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 15:50:26 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/CIcrud.php on line 135.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/CIcrud.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CIcrud')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CIcrud')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\CIcrud', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 15:50:59 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/CIcrud.php on line 135.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/CIcrud.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CIcrud')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CIcrud')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\CIcrud', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 15:51:50 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/CIcrud.php on line 135.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/CIcrud.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CIcrud')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CIcrud')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\CIcrud', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 15:51:55 --> syntax error, unexpected token "}"
+in APPPATH/Controllers/CIcrud.php on line 135.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(261): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH/Controllers/CIcrud.php')
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(239): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\CIcrud')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\CIcrud')
+ 4 SYSTEMPATH/CodeIgniter.php(846): class_exists('\\App\\Controllers\\CIcrud', true)
+ 5 SYSTEMPATH/CodeIgniter.php(453): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 16:44:02 --> Undefined variable $session
+in APPPATH/Views/pages/display_data.php on line 23.
+ 1 APPPATH/Views/pages/display_data.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Views/pages/display_data.php', 23)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/display_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 5 APPPATH/Controllers/CIcrud.php(23): view('pages/display_data', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->view_data()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 16:44:18 --> Undefined variable $session
+in APPPATH/Views/pages/display_data.php on line 23.
+ 1 APPPATH/Views/pages/display_data.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Views/pages/display_data.php', 23)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/display_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 5 APPPATH/Controllers/CIcrud.php(23): view('pages/display_data', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->view_data()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 16:44:39 --> Undefined variable $session
+in APPPATH/Views/pages/display_data.php on line 23.
+ 1 APPPATH/Views/pages/display_data.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Views/pages/display_data.php', 23)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/display_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 5 APPPATH/Controllers/CIcrud.php(23): view('pages/display_data', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->view_data()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 16:46:27 --> Undefined variable $session
+in APPPATH/Views/pages/display_data.php on line 23.
+ 1 APPPATH/Views/pages/display_data.php(23): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Views/pages/display_data.php', 23)
+ 2 SYSTEMPATH/View/View.php(213): include('APPPATH/Views/pages/display_data.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1135): CodeIgniter\View\View->render('pages/display_data', [], true)
+ 5 APPPATH/Controllers/CIcrud.php(27): view('pages/display_data', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->view_data()
+ 7 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 8 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-12 17:09:23 --> Undefined variable $session
+in APPPATH/Controllers/CIcrud.php on line 103.
+ 1 APPPATH/Controllers/CIcrud.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $session', 'APPPATH/Controllers/CIcrud.php', 103)
+ 2 SYSTEMPATH/CodeIgniter.php(896): App\Controllers\CIcrud->update_person('27')
+ 3 SYSTEMPATH/CodeIgniter.php(466): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\CIcrud))
+ 4 SYSTEMPATH/CodeIgniter.php(349): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(55): CodeIgniter\CodeIgniter->run()

@@ -19,6 +19,12 @@
             <div class="col-12">
                 <div class="card shadow border-0 rounded-0 my-2 pt-5">
                     <div class="card-body">
+                        <?php if (isset($_SESSION['session_msg'])) : ?>
+                            <p class="text-center text-primary p-1">
+                                <i class="bi bi-check-circle-fill"></i>
+                                <span class="ps-2"><?= $_SESSION['session_msg']; ?></span>
+                            </p>
+                        <?php endif ?>
                         <div class="table-responsive-md">
                             <table class="table">
                                 <thead>

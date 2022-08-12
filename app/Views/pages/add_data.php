@@ -20,15 +20,9 @@
             <div class="col-lg-6 col-md-8 col-12">
                 <div class="card shadow border-0 rounded-0 my-2 py-3">
                     <div class="card-body">
-                        <?php if (!empty($succes_msg)) : ?>
-                            <p class="text-center text-success border border-success rounded p-1">
-                                <i class="bi bi-check-circle-fill"></i>
-                                <span class="ps-2"><?= esc($succes_msg) ?></span>
-                            </p>
-                        <?php endif ?>
                         <?= session()->getFlashdata('error') ?>
                         <?= service('validation')->listErrors() ?>
-                        <form action="add_data" method="post">
+                        <form action="save_data" method="post">
                             <div class="row">
                                 <div class="col-md-6 col-12">
                                     <div class="mb-3">
